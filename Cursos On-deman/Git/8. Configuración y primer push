@@ -1,0 +1,80 @@
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+#   Configuración Inicial
+
+#   Configurar el nombre de usuario para los commits
+git config --global user.name "Nombre que aparecera en los commit"
+
+#   Configurar el correo electrónico para los commits
+git config --global user.email "correo de github"
+
+#   Validar la configuración
+git config -l
+
+-------------------------------------------------------------------------
+    GIT INIT
+-------------------------------------------------------------------------
+
+#   Inicializar el proyecto
+git init
+
+#   Adicional - Ver carpetas ocultas
+ls -a
+
+-------------------------------------------------------------------------
+    GIT ADD - VER IMAGEN3.png
+-------------------------------------------------------------------------
+
+#   Ver el estado de nuestros objetos
+git status
+
+#   Cargar archivos al stage para comitear
+git add .
+
+-------------------------------------------------------------------------
+    GIT DIFF
+-------------------------------------------------------------------------
+
+#   Ver cambios
+git diff <Nombre del archivo>
+
+#   Cargar archivos al stage para comitear
+git add <Nombre del archivo> [1 solo archivo] / git add . [todo]
+
+-------------------------------------------------------------------------
+    GIT COMMIT
+-------------------------------------------------------------------------
+
+#   1ra forma: Escribir el mensaje para el commit
+git commit
+[Se abrira una venta, escribimos el mensaje. Luego ESC + :wq para salir]
+
+#   2da forma
+git commit -m "Mensaje para el commit"
+
+#   Ver nuestro historial de commits
+git log
+
+-------------------------------------------------------------------------
+    GIT PUSH
+-------------------------------------------------------------------------
+
+#   Conectar repositorio local con el repositorio remoto
+git remote add origin URL/SSH
+
+#   Enviar cambios al repositorio remoto
+git push -u origin master
+
+Detalle:
+    git push: 
+        Este comando se usa para cargar los cambios desde el repositorio local hacia el repositorio remoto.
+
+    -u o --set-upstream: 
+        Esta opción establece la rama local (en este caso, master) para rastrear la rama remota especificada (origin/master). Esto simplifica futuros git push y git pull, ya que no necesitarás especificar la rama remota cada vez.
+
+    origin: 
+        Este es el nombre predeterminado del repositorio remoto que se creó cuando se clonó el repositorio o se añadió el remoto con git remote add origin <url-del-repo>.
+
+    master: 
+        Esta es la rama que se está enviando al repositorio remoto. En muchos proyectos nuevos, el nombre de la rama principal ha cambiado a main en lugar de master.
+

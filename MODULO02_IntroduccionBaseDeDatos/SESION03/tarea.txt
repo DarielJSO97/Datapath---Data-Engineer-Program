@@ -1,0 +1,7 @@
+Normalización
+
+Proceso de transformacion de vistas complejas a un modelo de datos mas pequeño y estable.
+Proceso que consiste en designar y aplicar una serie de reglas a las reciones obteniadas tras el paso
+del modelo entidad-relacion al modelo relacional con el objetivo de minimizar la redundancia.
+
+

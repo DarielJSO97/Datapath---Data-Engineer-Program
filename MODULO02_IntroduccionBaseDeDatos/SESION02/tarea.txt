@@ -1,0 +1,17 @@
+Repetir lo que se ha hecho en el caso netflix, explicar cada uno de los pasos. adjuntar el codigo y screenshoots de lo que se va desplegando.
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Los Sistemas Online Transactional Processing (OLTP)
+
+    Son bases de datos orientadas al procesamiento de transacciones.
+    Una transaccion genera un proceso atomicao que puede involucrar operaciones de insercion, modificacion y borrado de datos
+
+Los Sistemas Online Analytical Processing (OLAP)
+
+    Son bases de datos orientadas al procesamiento analitico.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+OLTP vs OLAP
+
+

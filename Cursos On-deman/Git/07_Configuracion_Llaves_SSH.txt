@@ -1,0 +1,50 @@
+___________________________________________________________________________________________________________________
+SSH - Securit Shell (llave para un protocolo de acceso)
+
+    Llave publica (candado)
+    Llave privada (llave)
+___________________________________________________________________________________________________________________
+
+CREAR UNA LLAVE
+
+$ ssh-keygen -t rsa -b 4096 -C "DarielJSO97"
+
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/1/.ssh/id_rsa):
+Created directory '/c/Users/1/.ssh'.
+Enter passphrase (empty for no passphrase): -------- VACIO , LE DAMOS ENTER --------------
+Enter same passphrase again: -------- VACIO , LE DAMOS ENTER --------------
+Your identification has been saved in /c/Users/1/.ssh/id_rsa
+Your public key has been saved in /c/Users/1/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:sf+UoKPbvGBgwT3BvFqeZVcvwuiLoszE69N4jciATWU DarielJSO97
+The key's randomart image is:
++---[RSA 4096]----+
+|     o.          |
+|   .E.o.    .    |
+|   oo o..o . .   |
+|  .  .o.+o+ . .  |
+|.o  o+ =S... .   |
+|o.....o .o . .   |
+| oo+ oo.o.. o    |
+| +=.=.o=.. o     |
+| .*+ .o.+.  .    |
++----[SHA256]-----+
+
+-- Nos vamos GITHUB [IMAGEN1]
+
+-- Obtener ruta del SSH
+1@LAPTOP-L64BEQO3 MINGW64 ~
+$ cd ~/.ssh
+
+-- Identificamos el archivo id_rsa.pub
+1@LAPTOP-L64BEQO3 MINGW64 ~/.ssh
+$ ls
+id_rsa  id_rsa.pub
+
+-- Consultamos el valor para cargar a github donde le ponemos cualquier nombre, para este caso le puse TEST [IMAGEN2]
+1@LAPTOP-L64BEQO3 MINGW64 ~/.ssh
+$ cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDsMLK8ICimtnrsJ8kCEEKsug/ZNS09DkjIJokIMCGoBilKTYGpmZwdxd8ea9v/7Vj6/pG62lZkGEO1q00lAkJW0rYhD+5y9Zl7oYnuNRcFesdclrxcyvTttZORGohWpuJw7j7/emJQKp8whDVKdSpBfYp6yDZqCq2Rx0vHngIycqJbCmbcSQi5oyRzOnrePOzbE3Qjs4Z6MayONtOKpzdowbj4TEQRDvkk2DO/evSlnFhzNb77ajtTtGdxQTJplpTDO3ofbL17LNl9f0/SkLBlXf+XpysHboWb53U5vb3rQsLxORZ2KiYdd7acQK/IVhP2YYvY1znnnZP7BamevIEma2DAZ4HVQOqHB4jO9cvJLaIJKc0zmH2vGBNlNFmN9NIQF8WlmzeV1fWoDCgOTpfrB7AcOxfujNZ9/fm/bECcAsZNkQSHbQlnXbM5w74Fv6ycwb+8K1dSnf6aPQrg/7vYBhpFfw6DcPbMUy8ZwGKGDWOE73lDExo+SyGayqkY3XgjdzOkYQj/Vrt9tC6P93ECNQlGQpbtpyka4bSuxWqL9hsqWT+tLSSQW6g+roE6IEDib/ETtlwfzjMwj3MOGTym0cVXF3olk2f77HdUJCDadLOz/frbArnz8kNR/9CunldhyO4mYesl4SE6e7baHN+RBz6CD/BArXiXvSw7IqFSBw== DarielJSO97
+
+___________________________________________________________________________________________________________________
